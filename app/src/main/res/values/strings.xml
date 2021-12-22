@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">App1</string>
+    <string name="add_users">Add Users</string>
+
+    <string name="add">Add</string>
+    <string name="existing_users">Existing Users</string>
+    <string name="abc_gmail_com">abc@gmail.com</string>
+    <string name="name">Name</string>
+    <string name="kasun_perera">Kasun Perera</string>
+    <string name="age">Age</string>
+    <string name="_28">28</string>
+    <string name="note">Note</string>
+    <string name="active">active</string>
+    <string name="email">Email</string>
 </resources>

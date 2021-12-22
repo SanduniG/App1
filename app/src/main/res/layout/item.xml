@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="20dp"
     android:backgroundTint="@color/grey_300"
-    android:layout_margin="@dimen/margin_medium">
+    android:layout_margin="@dimen/margin_medium"
+    android:id="@+id/card_layout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +37,7 @@
                 <TextView
                     android:layout_width="55dp"
                     android:layout_height="wrap_content"
-                    android:text="Email"
+                    android:text="@string/email"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginRight="@dimen/margin_medium"/>
@@ -44,7 +45,7 @@
                     android:id="@+id/txtemail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="abc@gmail.com"
+                    android:text="@string/abc_gmail_com"
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -58,7 +59,7 @@
                 <TextView
                     android:layout_width="55dp"
                     android:layout_height="wrap_content"
-                    android:text="Name"
+                    android:text="@string/name"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginRight="@dimen/margin_medium"/>
@@ -66,7 +67,7 @@
                     android:id="@+id/txtname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kasun Perera"
+                    android:text="@string/kasun_perera"
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -80,7 +81,7 @@
                 <TextView
                     android:layout_width="55dp"
                     android:layout_height="wrap_content"
-                    android:text="Age"
+                    android:text="@string/age"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginRight="@dimen/margin_medium"/>
@@ -88,7 +89,7 @@
                     android:id="@+id/txtage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="28"
+                    android:text="@string/_28"
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -102,7 +103,7 @@
                 <TextView
                     android:layout_width="55dp"
                     android:layout_height="wrap_content"
-                    android:text="Note"
+                    android:text="@string/note"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginRight="@dimen/margin_medium"/>
@@ -110,10 +111,29 @@
                     android:id="@+id/txtnote"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="active"
+                    android:text="@string/active"
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
             </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <Button
+                  android:id="@+id/btn_delete"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="delete"
+                  android:layout_margin="@dimen/margin_small"/>
+
+              <Button
+                  android:id="@+id/btn_update"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="update"
+                  android:layout_margin="@dimen/margin_small"/>
+          </LinearLayout>
 
 
 

@@ -16,8 +16,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText email_txt, name_txt, age_txt, note_txt;
-    Button add_btn;
+    EditText etEmail, etName, etAge, etNote;
+    Button btnAdd;
     RecyclerView recyclerView;
 
     List<Model> itemList = new ArrayList<>();
@@ -29,16 +29,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        email_txt=(EditText) findViewById(R.id.txt_email);
-        name_txt=(EditText) findViewById(R.id.txt_name);
-        age_txt=(EditText) findViewById(R.id.txt_age);
-        note_txt=(EditText) findViewById(R.id.txt_note);
+        etEmail=(EditText) findViewById(R.id.txt_email);
+        etName=(EditText) findViewById(R.id.txt_name);
+        etAge=(EditText) findViewById(R.id.txt_age);
+        etNote=(EditText) findViewById(R.id.txt_note);
 
-        add_btn=(Button) findViewById(R.id.btn_add);
+        btnAdd=(Button) findViewById(R.id.btn_add);
 
         recyclerView=(RecyclerView) findViewById(R.id.recycler_view);
-
-
 
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManagerger=new LinearLayoutManager(this);
@@ -47,17 +45,18 @@ public class MainActivity extends AppCompatActivity {
         adapter=new MainAdapter(itemList, MainActivity.this);
         recyclerView.setAdapter(adapter);
 
+        //set data
 
 
-        add_btn.setOnClickListener(new View.OnClickListener() {
+        btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                String e=email_txt.getText().toString();
-                String n=name_txt.getText().toString();
-                String a=age_txt.getText().toString();
-                String no=note_txt.getText().toString();
+                String e=etEmail.getText().toString();
+                String n=etName.getText().toString();
+                String a=etAge.getText().toString();
+                String no=etNote.getText().toString();
 
                 if (e.isEmpty() || n.isEmpty() || a.isEmpty() || no.isEmpty() ){
                     Toast.makeText(getApplicationContext(), "Please Complete!", Toast.LENGTH_SHORT).show();
@@ -65,33 +64,25 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     try{
 
-                        Model model=new Model(email_txt.getText().toString(),name_txt.getText().toString(), age_txt.getText().toString(), note_txt.getText().toString());
+                        Model model=new Model(etEmail.getText().toString(),etName.getText().toString(), etAge.getText().toString(), etNote.getText().toString());
                         adapter.add(model);
 
                   /*     // String email=email_txt.getText().toString();
                        // itemList.add(e);
                         email_txt.setText("");
                        // adapter.notifyItemInserted(itemList.size()-1);
-
-
                        // String name=name_txt.getText().toString();
                         itemList.add(n);
                         name_txt.setText("");
                         adapter.notifyItemInserted(itemList.size()-1);
-
                        // String age=age_txt.getText().toString();
                         itemList.add(a);
                         age_txt.setText("");
                         adapter.notifyItemInserted(itemList.size()-1);
-
                        // String note=note_txt.getText().toString();
                         itemList.add(no);
                         note_txt.setText("");
-                        adapter.notifyItemInserted(itemList.size()-1);
-
-*/
-
-
+                        adapter.notifyItemInserted(itemList.size()-1); */
                     }
                     catch (NumberFormatException e1){
 

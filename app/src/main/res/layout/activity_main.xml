@@ -10,9 +10,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Users"
+        android:text="@string/add_users"
         android:gravity="center"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textColor="@color/black"
         android:fontFamily="sans-serif"
         android:background="@drawable/textview_border"/>
@@ -34,7 +34,7 @@
                 android:id="@+id/txt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:textColorHint="@color/black"
                 android:gravity="center"
                 android:textSize="20dp"
@@ -49,7 +49,7 @@
                 android:id="@+id/txt_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:textColorHint="@color/black"
                 android:gravity="center"
                 android:textSize="20dp"
@@ -64,7 +64,7 @@
                 android:id="@+id/txt_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Age"
+                android:hint="@string/age"
                 android:textColorHint="@color/black"
                 android:gravity="center"
                 android:textSize="20dp"
@@ -78,7 +78,7 @@
                 android:id="@+id/txt_note"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:hint="Note"
+                android:hint="@string/note"
                 android:textColorHint="@color/black"
                 android:gravity="center"
                 android:textSize="20dp"
@@ -93,8 +93,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="20dp"
-                android:text="Add"
+                android:textSize="20sp"
+                android:text="@string/add"
                 android:backgroundTint="@color/blue_600"
                 android:textAllCaps="false"
                 android:layout_gravity="center_horizontal"
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:text="Existing Users"
+        android:text="@string/existing_users"
         android:fontFamily="sans-serif-black"
         android:layout_margin="@dimen/margin_medium"/>
 
@@ -116,6 +116,6 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_medium"/>
+        android:layout_margin="@dimen/margin_small"/>
 
 </LinearLayout>
