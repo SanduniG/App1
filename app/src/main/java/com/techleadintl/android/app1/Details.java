@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+//import android.widget.EditText;
 import android.widget.TextView;
 
 public class Details extends AppCompatActivity {
@@ -19,12 +19,12 @@ public class Details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        txtEmail=(TextView) findViewById(R.id.txt_email);
-        txtName=(TextView) findViewById(R.id.txt_name);
-        txtAge=(TextView) findViewById(R.id.txt_age);
-        txtNote=(TextView) findViewById(R.id.txt_note);
+        txtEmail= findViewById(R.id.txt_email);
+        txtName= findViewById(R.id.txt_name);
+        txtAge= findViewById(R.id.txt_age);
+        txtNote= findViewById(R.id.txt_note);
 
-        btnBack=(Button) findViewById(R.id.btn_back);
+        btnBack= findViewById(R.id.btn_back);
 
         Intent intent=getIntent();
 
