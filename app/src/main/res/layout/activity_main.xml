@@ -37,13 +37,13 @@
                 android:hint="@string/email"
                 android:textColorHint="@color/black"
                 android:gravity="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
                 android:background="@drawable/card_textview_boarder"
                 android:layout_margin="@dimen/margin_medium"
-
                 android:autofillHints="emailAddress"
-                android:inputType="text"/>
+                android:inputType="text"
+                tools:ignore="TextFields" />
 
             <EditText
                 android:id="@+id/txt_name"
@@ -52,11 +52,10 @@
                 android:hint="@string/name"
                 android:textColorHint="@color/black"
                 android:gravity="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
                 android:background="@drawable/card_textview_boarder"
                 android:layout_margin="@dimen/margin_medium"
-
                 android:autofillHints="username"
                 android:inputType="text"/>
 
@@ -67,12 +66,12 @@
                 android:hint="@string/age"
                 android:textColorHint="@color/black"
                 android:gravity="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
                 android:background="@drawable/card_textview_boarder"
                 android:layout_margin="@dimen/margin_medium"
-
-                android:inputType="number"/>
+                android:inputType="number"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/txt_note"
@@ -81,12 +80,12 @@
                 android:hint="@string/note"
                 android:textColorHint="@color/black"
                 android:gravity="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
                 android:background="@drawable/card_textview_boarder"
                 android:layout_margin="@dimen/margin_medium"
-
-                android:inputType="text"/>
+                android:inputType="text"
+                android:autofillHints="" />
 
             <Button
                 android:id="@+id/btn_add"
