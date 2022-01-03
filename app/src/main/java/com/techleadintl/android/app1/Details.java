@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class Details extends AppCompatActivity {
 
     TextView txtEmail, txtName, txtAge, txtNote;
+    Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,8 @@ public class Details extends AppCompatActivity {
         txtName=(TextView) findViewById(R.id.txt_name);
         txtAge=(TextView) findViewById(R.id.txt_age);
         txtNote=(TextView) findViewById(R.id.txt_note);
+
+        btnBack=(Button) findViewById(R.id.btn_back);
 
         Intent intent=getIntent();
 
@@ -34,5 +39,13 @@ public class Details extends AppCompatActivity {
 
         String note=intent.getStringExtra("note");
         txtNote.setText(note);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(Details.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

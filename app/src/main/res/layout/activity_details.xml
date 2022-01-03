@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -59,7 +57,7 @@
 
                     <TextView
                         android:id="@+id/txt_email"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:hint="@string/email"
                         android:textColorHint="@color/black"
@@ -89,7 +87,7 @@
                         android:textColor="@color/black"/>
                     <TextView
                         android:id="@+id/txt_age"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:hint="@string/age"
                         android:textColorHint="@color/black"
@@ -102,6 +100,13 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="back"/>
 
     </LinearLayout>
 
@@ -152,6 +157,5 @@
 
 
     </LinearLayout>
-
 
 </FrameLayout>
